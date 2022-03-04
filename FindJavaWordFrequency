@@ -15,7 +15,7 @@ public class Day_21_task {
 
         
 
-        /*int countJava = 0;
+        int countJava = 0;
         int countPyhton = 0;
 
         for (String s : strArr) {
@@ -34,7 +34,7 @@ public class Day_21_task {
 
         System.out.println("countJava = " + countJava);
 
-         */
+         
 
 
 
