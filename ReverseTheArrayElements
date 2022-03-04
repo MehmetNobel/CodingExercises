@@ -1,0 +1,40 @@
+package tasks_muhtar;
+
+import java.util.Arrays;
+
+public class Day_21_task {
+
+    public static void main(String[] args) {
+
+
+        String str = "java java ahmet mehmet ali hasan pyhton java pyhton";
+
+        String strArr[] = str.split(" ");
+
+        String strReversed[] = new String[strArr.length];
+
+        System.out.println(Arrays.toString(strArr));
+
+        String reversed = "";
+
+        int k = 0;
+
+        for (String s : strArr) {
+
+
+            for (int i = s.length() - 1; i >= 0; i--) {
+
+                reversed += "" + s.charAt(i);
+
+            }
+            reversed += " ";
+
+            k++;
+
+        }
+
+        strReversed = reversed.split(" ");
+        System.out.println(Arrays.toString(strReversed));
+
+
+
