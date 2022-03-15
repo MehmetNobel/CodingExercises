@@ -1,0 +1,22 @@
+    public static String retrieve(String str) {
+
+        String letters = "";
+        String digits = "";
+        String specialChars = "";
+        
+        for (int i = 0; i < str.length(); i++) {
+
+            if (Character.isLetter(str.charAt(i)))
+                letters += str.charAt(i);
+
+            if (Character.isDigit(str.charAt(i)))
+                digits += str.charAt(i);
+
+            if (!Character.isLetterOrDigit(str.charAt(i)))
+                specialChars += str.charAt(i);
+
+        }
+        String result = "letters : " + letters + "\n" + "digits : " + digits +
+                "\n" + "specialchars : " + specialChars;
+        return result;
+    }
